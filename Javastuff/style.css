@@ -1,0 +1,11 @@
+html{
+    font-family:'Courier New', Courier, monospace;
+}
+h1{
+    color: purple;
+    letter-spacing: 5px;
+}
+p{
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
