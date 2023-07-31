@@ -7,3 +7,9 @@ var deposit = 150;
 var total = bankAccount + deposit;
 
 console.log("Hey I'm in the console.");
+
+//review booleans - comparison operators
+true
+false
+//greater than
+3>2;
