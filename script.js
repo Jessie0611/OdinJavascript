@@ -41,3 +41,11 @@ console.log("Hey I'm in the console.");
 
 //index: hello --> h index 0 // e index 1 // ll index 2 // l index 3 // o index 4
 //grab the letter d in the string, "look at the dog" ----- d is index 12
+
+//8 data types of JS: Number, "String", Boolean T/F logic
+//Undefined var declared but has no assigned value, Null intentional absence of any object value
+//Symbol represents a unique value that's not equal to any other value, Object represents a collection of properties, and each property is a key-value pair
+//BigInt represents integers with arbitrary precision
+//JS is a dynamically typed language, meaning that you don't have to specify the data type of a variable when you declare it.
+//Instead, the data type is inferred based on the value assigned to the variable.
+
