@@ -36,4 +36,8 @@ console.log("Hey I'm in the console.");
 //unreachable from code outside the functions. 
 //The top level outside all your functions is called the global scope.
 //Values defined in the global scope are accessible from everywhere in the code
-   
+
+//Variables - “storage containers” for data in your code [var, let, and const
+
+//index: hello --> h index 0 // e index 1 // ll index 2 // l index 3 // o index 4
+//grab the letter d in the string, "look at the dog" ----- d is index 12
