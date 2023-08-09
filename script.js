@@ -47,5 +47,11 @@ console.log("Hey I'm in the console.");
 //Symbol represents a unique value that's not equal to any other value, Object represents a collection of properties, and each property is a key-value pair
 //BigInt represents integers with arbitrary precision
 //JS is a dynamically typed language, meaning that you don't have to specify the data type of a variable when you declare it.
-//Instead, the data type is inferred based on the value assigned to the variable.
+const a = "Hello";
+const b = "World";
+
+console.log(c);
+//Reference Error - C is undefined
+//Syntax Error - incorrectly written code vs Logic Error- written correctly but giving incorrect results
+//Type Error
 
