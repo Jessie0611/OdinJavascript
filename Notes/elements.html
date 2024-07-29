@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessie Doing Odin Project</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="drop">
+                    <h2><a href="../index.html"> Home</h2></a></button>
+            </div>
+            
+            <div class="dropdown">
+                <button class="drop">
+                    <h2>Projects</h2>
+                </button>
+                <div class="dropContent">
+                    <a href="../Projects/numbers.html">Numbers in Java</a> 
+                    <a href="../Projects/assignment1.html">Assignment 1</a>
+                    <a href="../Projects/script.html">T/F Number Exercise</a>
+                    <a href="../Projects/practice.html">Practice</a>
+                    <a href="../Projects/exercise.html">Exercise</a>
+                    <a href="../Projects/fizzbuzz.html">FizzBuzz</a>
+                    <a href="../Projects/rps.html">Rock,Paper,Scissors</a>
+                </div> </div>
+                <div class="dropdown">
+                  <button class="drop">
+                      <h2> <a href="../Math/math.html">Math Exercises</a>  </h2></button>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop">
+                    <h2>Notes</h2>
+                </button>
+                <div class="dropContent">
+                    <a href="elements.html">Elements</a>
+
+                </div></div>
+        </nav>
+    </header>
+    <p><b>Element Creation:</b> <br>document.createElement(tagName, [options]) - creates a new element of tag type tagName. [options] in this case means you can add some optional parameters to the function. Don’t worry about these at this point. <br><br>
+        <b>Query Selectors: </b><br>
+        element.querySelector(selector) - returns a reference to the first match of selector. <br>
+        element.querySelectorAll(selectors) - returns a “NodeList” containing references to all of the matches of the selectors. <br> <br>
+        <b>Append Elements: </b> <br>
+        parentNode.appendChild(childNode) - appends childNode as the last child of parentNode. <br>
+        parentNode.insertBefore(newNode, referenceNode) - inserts newNode into parentNode before referenceNode. <br> <br>
+        <b>Remove Elements: </b> <br>
+        parentNode.removeChild(child) - removes child from parentNode on the DOM and returns a reference to child. <br> <br>
+            </p>
+            <p><br>
+                <b>Adding Inline Style</b> <br>
+        // adds the indicated style rule to the element in the div variable <br>
+        div.style.color = "blue"; <br>
+        <br>
+        // adds several style rules <br>
+        div.style.cssText = "color: blue; background: white;"; <br>
+        <br>
+        // adds several style rules <br>
+        div.setAttribute("style", "color: blue; background: white;");<br>
+        <br>
+              
+        
+        When accessing a kebab-cased CSS property like background-color with JS, you will need to either use camelCase with dot notation or bracket notation. When using bracket notation, you can use either camelCase or kebab-case, but the property name must be a string. <br> <br>
+        // dot notation with kebab case: doesn't work as it attempts to subtract color from div.style.background <br>
+        // equivalent to: div.style.background - color  <br>
+        div.style.background-color;<br>
+        <br>
+        // dot notation with camelCase: works, accesses the div's background-color style <br>
+        div.style.backgroundColor; <br>
+        <br>
+        // bracket notation with kebab-case: also works <br>
+        div.style["background-color"]; <br>
+        <br>
+        // bracket notation with camelCase: also works <br>
+        div.style["backgroundColor"]; <br>
+            </p>
+        
+</body>
+</html>

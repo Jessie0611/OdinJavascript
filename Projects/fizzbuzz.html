@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUMBERS</title>
+    <title>FizzBuzz Project</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="fizzbuzz.js"></script>
 </head>
 <header>
     <nav>
@@ -44,39 +45,28 @@
     </nav>
 </header>
 <body>
+<h2>Solving FizzBuzz</h2>
+<p>- Write a program that allows the user to enter a number.
+<br>- Print each number between one and the number the user entered.
+<br>- For numbers that divide by 3 without a remainder print Fizz.
+<br>- For numbers that divide by 5 without a remainder print Buzz.
+<br>- For numbers that divide by both 3 and 5 without a remainder print FizzBuzz.</p>
+<p><br>
+    let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: ")); <br>
 
-
-<h2>JavaScript Numbers</h2>
-
-<p>Extra large or extra small numbers can be written with scientific (exponent) notation:
-    <BR> let a = 123e5; <br>
-        let b = 123e-5;</BR> <br>
+     <br>
+    for (let i = 1; i <= answer; i++) { <br>
+        &nbsp; if (i % 3 === 0 && i % 5 === 0) { <br>
+            &nbsp;&nbsp; console.log("FizzBuzz"); <br>
+            &nbsp;} else if (i % 3 === 0) { <br>
+                &nbsp;&nbsp;console.log("Fizz"); <br> 
+                &nbsp;} else if (i % 5 === 0) { <br>
+                    &nbsp;&nbsp;console.log("Buzz"); <br>
+                    &nbsp;} else { <br>
+                        &nbsp;&nbsp;console.log(i); <br>
+                        &nbsp;} <br>
+      } <br>
+    
 </p>
-
-<p id="demo"></p>
-
-<script>
-    console.log(23+97)
-
-let a = 123e5;
-let b = 123e-5;
-document.getElementById("demo").innerHTML = x + "<br>" + y;
-</script>
-
-<p>A common mistake is to expect this result to be 102030: <br>
-    let x = 10; <br>
-    let y = 20; <br>
-    let z = "30"; <br>
-    let result = x + y + z; </p>
-
-<p id="demo2"></p>
-
-<script>
-let x = 10;
-let y = 20;
-let z = "30";
-let result = x + y + z;
-document.getElementById("demo2").innerHTML = result;
-</script>
 </body>
 </html>
